@@ -11,7 +11,7 @@ const NavBar = () => {
     { href: "#", classname: "text-lg", content: "About" },
   ];
   return (
-    <header className="flex py-6 shadow-xl fixed top-0 w-full z-10 bg-backround/95">
+    <header className="flex py-6 shadow-xl fixed top-0 w-full z-10 backdrop-blur-sm bg-white bg-opacity-80">
       <nav className="flex items-center gap-10 container font-semibold">
         {navElements.map((el, i) => (
           <Link href={el.href} key={i} className={el.classname}>
